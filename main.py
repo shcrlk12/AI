@@ -15,9 +15,9 @@ samples = expand_dims(data, 0)
 datagen = ImageDataGenerator(horizontal_flip=True)
 it = datagen.flow(
                     samples, batch_size=1, 
-                    save_to_dir='aug_data',  # 여기에 저장됨
+                    save_to_dir='aug_data',
                     save_prefix='aug',
-                    save_format='png'  # 또는 'jpg'
+                    save_format='png'
                 )
 fig = plt.figure(figsize=(30,30))
 
